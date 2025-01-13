@@ -3,4 +3,5 @@ venv
 
 experiment_results/
 streaming_llm/
+lm-evaluation-harness/
 .vscode
