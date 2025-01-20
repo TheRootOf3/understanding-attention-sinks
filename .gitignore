@@ -5,3 +5,5 @@ experiment_results/
 streaming_llm/
 lm-evaluation-harness/
 .vscode
+.DS_Store
+submission
