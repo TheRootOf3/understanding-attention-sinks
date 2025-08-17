@@ -4,6 +4,10 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.5+-red.svg)](https://pytorch.org/)
 [![Transformers](https://img.shields.io/badge/🤗%20Transformers-4.47+-yellow.svg)](https://huggingface.co/transformers/)
 
+<a target="_blank" href="https://colab.research.google.com/github/TheRootOf3/understanding-attention-sinks/blob/main/main.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 ## Overview
 
 This project investigates the phenomenon of **attention sinks** in Large Language Models (LLMs), a critical finding that affects efficient inference through Key-Value (KV) caching. Attention sinks refer to specific tokens (typically the initial tokens in a sequence) that consistently receive disproportionate attention scores, serving as "attention dumps" due to the softmax operation in the attention mechanism. 
@@ -177,8 +181,8 @@ The implementation modifies the standard Llama attention mechanism to:
 ### Prerequisites
 ```bash
 # Clone the repository
-git clone git@github.com:TheRootOf3/L46-mini-project.git
-cd L46-mini-project
+git clone git@github.com:TheRootOf3/understanding-attention-sinks.git
+cd understanding-attention-sinks
 
 # Install dependencies
 pip install -r requirements.txt
@@ -216,11 +220,11 @@ Open and execute `main.ipynb` in Jupyter Lab/Notebook. The notebook is structure
 If you use this study in your work, please cite:
 
 ```bibtex
-@misc{l46_attention_sinks,
+@misc{understanding-attention-sinks,
   title={Understanding Attention Sinks in Large Language Models: An Empirical Investigation},
   author={Andrzej Szablewski},
   year={2024},
-  url={https://github.com/TheRootOf3/L46-mini-project}
+  url={https://github.com/TheRootOf3/understanding-attention-sinks}
 }
 ```
 
